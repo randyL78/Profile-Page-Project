@@ -1,4 +1,9 @@
 /* Global Layout Set-up */
+
+/* Base theme hue 142
+   Compliment hues 40 degree offset
+   Accents 120 degree offset*/
+
 * { 
   box-sizing: border-box;
 }
@@ -9,13 +14,13 @@ body {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #222;
-  background: #f7f5f0;
+  background-color: #D8FFE6;
 }
 /* Link Styles */
 
 a {
   text-decoration: none;
-  color: #999;
+  color: #B0FBCB;
 }
 a:hover {
   color: #6633ff;
@@ -25,7 +30,7 @@ a:hover {
 
 .main-nav {
   width: 100%;
-  background: black;
+  background-color: #003E41;
   min-height: 30px;
   padding: 10px;
   position: fixed;
@@ -41,9 +46,9 @@ a:hover {
 }
 
 .nav .name {
-    display: block;
-    margin-right: auto;
-    color: white;
+  display: block;
+  margin-right: auto;
+  color: white;
 }
 .nav li {
   padding: 5px 10px 10px 10px;
@@ -57,7 +62,7 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('images/Profile-Background.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -70,23 +75,23 @@ header .profile-image {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 3px solid #C64900;
   transition: all .5s;
 }
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
 }
 .tag {
-  background-color: #efefef;
-  color: black;
+  background-color: #C1FCA9;
+  color: #003E41;
   padding: 10px;
   border-radius: 5px;
   display: table;
   margin: 10px auto;
 } 
 .location {
-  background-color: #222;
-  color: yellow;
+  background-color: #003E41;
+  color: #E7DAFF;
 }
 .card {
   margin: 30px;
@@ -99,7 +104,7 @@ header .profile-image:hover {
   transition: all .5s;
 }
 .card:hover {
-  border-color: #ff99ff;
+  border-color: #C64900;
 }
 
 ul.skills {
@@ -110,14 +115,14 @@ ul.skills {
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
+  background-color: #34AA04;
   color: white;
   padding: 5px 10px;
   margin: 2px;
 }
 
 .skills li:nth-child(odd) {
-  background: #0399ff;
+  background-color: #037377;
 }
 
 footer {
@@ -148,7 +153,7 @@ a.social {
   width: 30px;
   height: 30px;
   background-size: 30px 30px;
-  opacity: .4;
+  opacity: .6;
   transition: all .5s;
 }
 a.twitter {
