@@ -29,6 +29,9 @@ a:hover {
 /* Section Styles */
 
 .main-nav {
+  /* fix bug where portrait transition overlaps navbar when page is partially scrolled */
+  z-index: 200;
+   
   width: 100%;
   background-color: #003E41;
   min-height: 30px;
@@ -54,15 +57,16 @@ a:hover {
   padding: 5px 10px 10px 10px;
 }
 .nav a {
+  color: #8AB99B;
   transition: all .5s;
 }
-.nav a:hover {
+.nav a:hover, .nav .active {
   color: white
 }
 
 header {
   text-align: center;
-  background: url('images/Profile-Background.jpg') no-repeat top center ;
+  background: url('images/Profile-Background-Green.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -74,12 +78,13 @@ header .profile-image {
   margin-top: 50px;
   width: 150px;
   height: 150px;
-  border-radius: 50%;
+  border-radius: 30%;
   border: 3px solid #C64900;
-  transition: all .5s;
+  transition: all .7s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+ transform: scale(1.2) rotate(8deg);
+ border-width: 6px;
 }
 .tag {
   background-color: #C1FCA9;
@@ -161,6 +166,9 @@ a.twitter {
 }
 a.linkedin {
   background-image: url(images/linkedin.svg);
+}
+a.facebook {
+  background-image: url(images/ProfilePageFacebook.svg);
 }
 a.github {
   background-image: url(images/github.svg);
